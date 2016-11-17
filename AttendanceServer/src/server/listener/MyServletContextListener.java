@@ -33,7 +33,7 @@ public class MyServletContextListener implements ServletContextListener
     logger.info("Servlet Context Initialized");
     scheduler = Executors.newSingleThreadScheduledExecutor();
     // Wait 1 minute, then every minute afterward
-    scheduler.scheduleAtFixedRate(new DoEveryMinuteJob(), 1, 1, TimeUnit.MINUTES);
+    scheduler.scheduleAtFixedRate(new DoEveryMinuteJob(), 3, 3, TimeUnit.MINUTES);
 
   }
 

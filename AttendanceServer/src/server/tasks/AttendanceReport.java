@@ -29,10 +29,10 @@ public class AttendanceReport
     Calendar calNow = Calendar.getInstance();
     Date endDate = calNow.getTime();
 
-    calNow.add(Calendar.MINUTE, -3);
+    calNow.add(Calendar.MINUTE, -2);
     Date tardyDate = calNow.getTime();
 
-    calNow.add(Calendar.MINUTE, -2);
+    calNow.add(Calendar.MINUTE, -1);
     Date startDate = calNow.getTime();
 
     logger.info("Tardy start time: " + tardyDate + " to " + endDate);
@@ -42,7 +42,7 @@ public class AttendanceReport
 
     if (cardswipes.size() > 0)
     {
-      logger.info("Getting swipes in the last 5 minutes: Time of report is:" + endDate + "  Time class started is: "
+      logger.info("Getting swipes in the last 3 minutes: Time of report is:" + endDate + "  Time class started is: "
           + startDate);
 
       for (CardSwipes cardswipe : tardycardswipes)

@@ -13,18 +13,19 @@ public class RunScanner
     String cardNumber = "000000";
 
     CardSwipe cs = new CardSwipe();
-    ConfigProperties cfgProp = new ConfigProperties();
+    // ConfigProperties cfgProp = new ConfigProperties();
 
-    try
-    {
-      cfgProp.getPropertyValues();
-    } catch (IOException e1)
-    {
-      e1.printStackTrace();
-    }
+    // try
+    // {
+    // // cfgProp.getPropertyValues();
+    // } catch (IOException e1)
+    // {
+    // e1.printStackTrace();
+    // }
 
     // Get the clss room from the properties file
-    classRoom = cfgProp.getClassRoom();
+    // classRoom = cfgProp.getClassRoom();
+    classRoom = "1234";
     BufferedReader br = null;
 
     try

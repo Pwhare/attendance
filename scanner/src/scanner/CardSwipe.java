@@ -12,13 +12,13 @@ public class CardSwipe
   public void sendSwipedCard(String cardnumber, String classroom) throws Exception
   {
 
-    ConfigProperties cfgProp = new ConfigProperties();
+    // ConfigProperties cfgProp = new ConfigProperties();
 
-    cfgProp.getPropertyValues();
+    // cfgProp.getPropertyValues();
 
-    serverAddress = cfgProp.getServerURI();
+    // serverAddress = cfgProp.getServerURI();
 
-    String url = serverAddress = "http://192.168.1.17:8080/AttendanceServer/web/send/swipe?cardnumber=" + cardnumber
+    String url = serverAddress = "http://localhost:8080/AttendanceServer/web/send/swipe?cardnumber=" + cardnumber
         + "&classroom=" + classroom;
     System.out.println("Swiping Card: card number: " + cardnumber + " classroom: " + classroom + " URL: " + url);
     URL obj = new URL(url);

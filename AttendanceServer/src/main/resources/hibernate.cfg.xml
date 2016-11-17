@@ -9,14 +9,14 @@
 			com.mysql.jdbc.Driver
 		</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Attendance</property>
-		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.username">pierson</property>
 		<property name="connection.password"></property>
 		<property name="connection.pool.size">1</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
 		<property name="hdm2ddl.auto">create</property>
-		<mapping class="com.whitehare.attendance.server.persistence.CardSwipes" />
-		<mapping class="com.whitehare.attendance.server.persistence.Students" />
-		<mapping class="com.whitehare.attendance.server.persistence.TestJoin" />
+		<mapping class="server.persistence.CardSwipes" />
+		<mapping class="server.persistence.Students" />
+		<mapping class="server.persistence.TestJoin" />
 	</session-factory>
 </hibernate-configuration>
